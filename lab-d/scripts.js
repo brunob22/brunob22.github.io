@@ -19,7 +19,7 @@ function getWeather() {
 
 
 function getCurrentWeather(city) {
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=&units=metric&lang=pl`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b591039a1f72f72be62f2d2fea56d6f0&units=metric&lang=pl`;
   let req = new XMLHttpRequest();
   req.open("GET", url, true);
 
@@ -35,7 +35,7 @@ function getCurrentWeather(city) {
 }
 
 async function getForecast(city) {
-    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=0&units=metric&lang=pl`;
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=b591039a1f72f72be62f2d2fea56d6f0&units=metric&lang=pl`;
 
     const response = await fetch(url);
     const data = await response.json();
